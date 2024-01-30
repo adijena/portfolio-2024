@@ -11,13 +11,15 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { SiCodeforces, SiLeetcode } from "react-icons/si";
+import bgImg from "../assets/img2.png"
+import resume from "../assets/AdityaJena.pdf"
 
 const Home = () => {
   return (
     <div id="home">
       <img
         className="w-full h-screen object-fill "
-        src="src/assets/img2.png"
+        src={bgImg}
         alt=""
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
@@ -81,7 +83,7 @@ const Home = () => {
             </div>
 
             <button className="flex bg-[#3d3b2c] rounded-xl py-4 px-8 gap-4 font-semibold shadow-xl text-yellow-500   justify-center hover:text-yellow-700 w-[290px]"
-            onClick={() => window.open("src/assets/AdityaJena.pdf", '_blank')}
+            onClick={() => window.open(resume, '_blank')}
             >
               <span className="mt-1">
                 <FaDownload size={24} />
